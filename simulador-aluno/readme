@@ -1,0 +1,20 @@
+dentro desta pasta, pelo console eu devo:
+
+docker-compose up -d    <= vai criar a imagem e iniciar o container
+docker-compose ps       <= vai listar os containers e mostrar a situação deles
+PS C:\GitHub\FullCycle\simulador-aluno> docker-compose ps
+  Name           Command        State   Ports
+---------------------------------------------
+simulator   tail -f /dev/null   Up
+
+tive um erro na syntaxe do command, que impedia o container de iniciar, resolvi com o seguinte procedimento:
+docker-compose rm       <= sistema pediu pra confirmar a exclusão
+
+depois disso tive que remover a imagem criada com o comando
+docker image rm simulador-aluno_app
+
+o nome da imagem eu vi com o comando
+docker image ls
+
+depois disso tudo corrigi o Dockerfile e executei novamente o comando
+docker-compose up -d
