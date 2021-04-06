@@ -18,3 +18,32 @@ docker image ls
 
 depois disso tudo corrigi o Dockerfile e executei novamente o comando
 docker-compose up -d
+
+-------------------------------
+1:17:20
+
+uma vez iniciado o container digito o comando para acessar o bash deste container:
+docker exec -it simulator bash
+
+go possui um go mod init github.com/codeedu/imersaofsfc2-simulator
+
+esse comando cria um arquivo go.mod, que vai ser usado na programação
+
+depois disso vamos criar um route.go para ter a maioria
+das funcionalidades e um main.go para teste da aplicação
+
+a execução da aplicação é feita no console com o comando:
+go run main.go
+
+os erros são explicitados com arquivo e linha, ajudando no debug
+ficou rodando por console até arquivo
+
+-------------------------------
+1:44:10
+
+integrar a aplicação GO com o Apache Kafka
+
+-------------------------------
+2:04:26
+
+erro ao executar o docker-compose up -d na pasta C:\GitHub\FullCycle\simulador-aluno\.docker\kafka
